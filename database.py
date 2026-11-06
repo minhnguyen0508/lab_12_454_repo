@@ -17,11 +17,11 @@ load_dotenv()
 
 #databse config
 DB_CONFIG = {
-    "user": os.getenv("DB_USER"),
-    "password": os.getenv("DB_PASSWORD"),
-    "database": os.getenv("DB_NAME"),
     "host": os.getenv("DB_HOST", "localhost"),
-    "port": int(os.getenv("DB_PORT", "3000")),
+    "port": int(os.getenv("DB_PORT", "5432")),
+    "database": os.getenv("DB_NAME", "mcp_lab"),
+    "user": os.getenv("DB_USER", "mcp_user"),
+    "password": os.getenv("DB_PASSWORD"),
 }
 
 
